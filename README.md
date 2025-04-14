@@ -98,4 +98,4 @@ Licensed under MIT – because love should be free and open to all.
 
 🚀 Ready to launch? Dive into the code and let’s make love (apps) better!
 
-Made with ❤️ (and a little bit of bun run dev magic) by [Your Name / Team].
+Made with ❤️ (and a little bit of bun run dev magic) by [Faizan Khan + Wei Jian Zhen].
