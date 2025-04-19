@@ -13,20 +13,20 @@ export default component$(() => {
           <Link href="/login" class="w-auto h-full p-5 border border-slate-500 bg-purple-400 text-black">Login/Sign-up</Link>
         </div>
       </nav>
-      <main class="flex flex-col items-center justify-evenly w-full h-full bg-pink-400">
-        <div class="flex flex-col items-center justify-center w-auto h-full text-center">
+      <main class="flex flex-col items-center justify-evenly w-full min-h-screen bg-pink-400">
+        <div class="flex flex-col items-center justify-center w-full h-screen text-center">
           <h1 class="font-extrabold text-9xl">Romance Internationally</h1>
           <h2 class="font-bold text-6xl">With your A.I. wingman</h2>
           <button type="button" class="mt-8 p-8 font-semibold text-2xl bg-pink-300">Find Love Now!</button>
         </div>
-        <div class="flex flex-row items-center justify-center w-full h-full text-center bg-rose-300">
+        <div class="flex flex-row items-center justify-center w-full h-screen text-center bg-rose-300">
           <div class="flex flex-col items-center justify-start w-full h-full p-6 border border-black">
             <h3 class="font-bold text-4xl my-3">Learn On The Go</h3>
             <p class="text-xl">Practice learning your lover's language anywhere at anytime!</p>
           </div>
           <div class="flex flex-col items-center justify-start w-full h-full border border-black">
-            <h3 class="font-bold text-4xl my-3">Stress Less,</h3>
-            <h3 class="font-bold text-4xl my-3">Flirt More</h3>
+            <h3 class="font-bold text-4xl mt-3 mb-1">Stress Less,</h3>
+            <h3 class="font-bold text-4xl mt-1 mb-3">Flirt More</h3>
             <p class="text-xl" >Translate your conversations with A.I. in real-time chats!</p>
           </div>
           <div class="flex flex-col items-center justify-start w-full h-full border border-black">
