@@ -41,7 +41,7 @@ export default component$(() => {
           <Link href="/privacypolicy" class="mx-2">Privacy Policy</Link>
           <Link href="/about" class="mx-2">About</Link>
         </div>
-        <div class="flex flex-row items-center justify-center w-full h-1/2">
+        <div class="flex flex-row items-center justify-center w-full h-1/2 m-0">
           <small>@ Copyright 2025</small>
         </div>
       </footer>
