@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/client"
+}
+
+model User {
+  id                 String    @id @default(uuid())
+  email              String    @unique
+  name               String?
+  languagePreference String?   @default("en")
+  sentMessages       Message[] @relation("sentMessages")
+  receivedMessages   Message[] @relation("receivedMessages")
+  matchesAsUser1     Match[]   @relation("Match_user1")
+  matchesAsUser2     Match[]   @relation("Match_user2")
+  createdAt          DateTime  @default(now())
+}
+
+model Match {
+  id        String    @id @default(uuid())
+  user1     User      @relation("Match_user1", fields: [userId1], references: [id])
+  userId1   String
+  user2     User      @relation("Match_user2", fields: [userId2], references: [id])
+  userId2   String
+  messages  Message[]
+  matchedAt DateTime  @default(now())
+}
+
+model Message {
+  id          String   @id @default(uuid())
+  sender      User     @relation("sentMessages", fields: [senderId], references: [id])
+  senderId    String
+  receiver    User     @relation("receivedMessages", fields: [receiverId], references: [id])
+  receiverId  String
+  match       Match    @relation(fields: [matchId], references: [id])
+  matchId     String
+  content     String
+  translation String?
+  language    String?
+  isRead      Boolean  @default(false)
+  sentAt      DateTime @default(now())
+}

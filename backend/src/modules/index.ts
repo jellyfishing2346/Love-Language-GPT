@@ -16,4 +16,4 @@ const app = new Elysia()
   .use(aiRoutes)
   .listen(3000);
 
-console.log(`🦊 Backend running at ${app.server?.hostname}:${app.server?.port}`);
+  console.log(`💌 Love-Language-GPT running at ${app.server?.hostname}:${app.server?.port}`);

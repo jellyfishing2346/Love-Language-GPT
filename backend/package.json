@@ -1,6 +1,14 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/jwt": "^1.2.0",
+    "@prisma/client": "^6.6.0",
+    "elysia": "^1.2.25",
+    "openai": "^4.95.1"
+  },
   "devDependencies": {
-    "prisma": "^6.6.0"
+    "@types/node": "^22.14.1",
+    "prisma": "^6.6.0",
+    "typescript": "^5.8.3"
   }
 }
