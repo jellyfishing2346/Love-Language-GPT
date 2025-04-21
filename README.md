@@ -92,7 +92,7 @@ Love is open-source! ❤️🔓 Feel free to:
 
 📜 License
 
-Licensed under MIT – because love should be free and open to all.
+Licensed under [MIT & Bionic-GPT](https://github.com/jellyfishing2346/Love-Language-GPT/blob/20-create-licensemd-files/LICENSE) – because love should be free and open to all.
 
 💌 Find your multilingual match today! 💌
 
