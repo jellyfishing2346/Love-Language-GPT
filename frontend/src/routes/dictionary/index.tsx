@@ -1,9 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Parentcont } from "~/components/Parentcont";
 
 export default component$(() => {
   return (
-    <div class="w-screen h-screen">
+    <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-violet-300">
         <div>
           <button type="button">⚙️</button>
@@ -25,7 +26,7 @@ export default component$(() => {
           <p>Lorem ipsum</p>
         </div>
       </main>
-    </div>
+    </Parentcont>
   );
 });
 

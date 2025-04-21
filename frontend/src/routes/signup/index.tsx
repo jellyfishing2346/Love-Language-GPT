@@ -1,9 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import { Link, type DocumentHead } from "@builder.io/qwik-city";
+import { Parentcont } from "~/components/Parentcont";
 
 export default component$(() => {
   return (
-    <div class="w-screen h-screen">
+    <Parentcont>
       <div class="flex items-center justify-center-safe w-full h-full bg-black">
         <div class="flex flex-col items-center justify-center w-1/4 h-full">
           <form class="flex flex-col items-center justify-evenly bg-slate-500">
@@ -33,8 +34,8 @@ export default component$(() => {
           </form>
         </div>
       </div>
-    </div>
-  );
+    </Parentcont>
+  )
 });
 
 export const head: DocumentHead = {
