@@ -148,7 +148,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/test/Love-Language-GPT/backend/prisma/generated/client",
+      "value": "/home/zhen/vscodium-workspace/Love-Language-GPT/backend/prisma/generated/client",
       "fromEnvVar": null
     },
     "config": {
@@ -157,16 +157,16 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/test/Love-Language-GPT/backend/prisma/schema.prisma",
+    "sourceFilePath": "/home/zhen/vscodium-workspace/Love-Language-GPT/backend/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
@@ -176,7 +176,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": false,
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {
