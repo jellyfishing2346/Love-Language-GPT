@@ -19,7 +19,7 @@ export default component$(() => {
       </nav>
 
       <main class="flex flex-row items-center justify-center-safe w-full h-full">
-        <div class="w-full h-full bg-purple-300">
+        <div class="w-full h-full border border-black bg-purple-300">
 
           <Link href="/ai" class="flex flex-col items-center justify-evenly w-full h-full">
             <h2 class="font-bold text-6xl">A.I.</h2>
