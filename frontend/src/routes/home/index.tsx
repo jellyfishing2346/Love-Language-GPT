@@ -1,15 +1,37 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useStore } from "@builder.io/qwik";
 import { Link, type DocumentHead } from "@builder.io/qwik-city";
 import { Parentcont } from "~/components/Parentcont";
 import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
+import { Overlay } from "~/components/Overlay/Overlay";
 
 export default component$(() => {
+
+  const isOverlayVisible = useStore({setOverlayVisible: false});
+  const btnOverlayTxt = ("✕");
+
+  const openOverlay = $(() => {
+    isOverlayVisible.setOverlayVisible = true;
+  });
+
+  const closeOverlay = $(() => {
+    isOverlayVisible.setOverlayVisible = false;
+  });
+
   return (
     <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-violet-300">
         <div>
-          <button type="button">⚙️</button>
+          <button onClick$={openOverlay} class="w-full h-full p-8 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-400">
+            ⚙️
+          </button>
+          <Overlay
+              isVisible={isOverlayVisible.setOverlayVisible}
+              onClose={closeOverlay}
+              buttonText={btnOverlayTxt}
+          >
+              <h1 class="font-bold text-5xl/loose">Settings</h1>
+          </Overlay>
         </div>
 
         <div>
@@ -72,3 +94,4 @@ export const head: DocumentHead = {
     },
   ],
 };
+
