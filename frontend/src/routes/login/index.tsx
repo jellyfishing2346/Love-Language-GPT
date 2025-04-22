@@ -14,7 +14,7 @@ export default component$(() => {
               <input type="email" class="mx-1 bg-white" />
             </div>
             
-            <div class="flex tiems-center justify-end-safe w-full my-2">
+            <div class="flex items-center justify-end-safe w-full my-2">
               <label>Password: </label>
               <input type="password" class="mx-1 bg-white" />
             </div>
