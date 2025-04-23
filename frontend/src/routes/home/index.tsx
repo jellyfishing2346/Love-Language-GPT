@@ -1,12 +1,37 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useStore } from "@builder.io/qwik";
 import { Link, type DocumentHead } from "@builder.io/qwik-city";
+import { Parentcont } from "~/components/Parentcont";
+import { Vmodal } from "~/components/Vmodal/Vmodal";
+import { Vmodalcols } from "~/components/Vmodalcols";
+import { Overlay } from "~/components/Overlay/Overlay";
 
 export default component$(() => {
+
+  const isOverlayVisible = useStore({setOverlayVisible: false});
+  const btnOverlayTxt = ("✕");
+
+  const openOverlay = $(() => {
+    isOverlayVisible.setOverlayVisible = true;
+  });
+
+  const closeOverlay = $(() => {
+    isOverlayVisible.setOverlayVisible = false;
+  });
+
   return (
-    <div class="w-screen h-screen">
+    <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-violet-300">
         <div>
-          <button type="button">⚙️</button>
+          <button onClick$={openOverlay} class="w-full h-full p-8 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-400">
+            ⚙️
+          </button>
+          <Overlay
+              isVisible={isOverlayVisible.setOverlayVisible}
+              onClose={closeOverlay}
+              buttonText={btnOverlayTxt}
+          >
+              <h1 class="font-bold text-5xl/loose">Settings</h1>
+          </Overlay>
         </div>
 
         <div>
@@ -19,43 +44,44 @@ export default component$(() => {
       </nav>
 
       <main class="flex flex-row items-center justify-center-safe w-full h-full">
-        <div class="w-full h-full bg-purple-300">
 
-          <Link href="/ai" class="flex flex-col items-center justify-evenly w-full h-full">
-            <h2 class="font-bold text-6xl">A.I.</h2>
+        <Vmodal class="bg-purple-300">
 
-            <img src="" alt="Content Picture" width={128} height={128} />
+          <Vmodalcols class="bg-purple-300">
+            <Link href="/ai" class="w-full h-full">
+              <h2 class="font-bold text-6xl">A.I.</h2>
 
-            <p class="text-2xl">Configure or chat with your A.I.</p>
-          </Link>
-          
-        </div>
+              <img src="" alt="Content Picture" width={128} height={128} />
 
-        <div class="w-full h-full bg-red-400">
+              <p class="text-2xl">Configure or chat with your A.I.</p>
+            </Link>
+            
+          </Vmodalcols>
 
-          <Link href="/datefinder" class="flex flex-col items-center justify-evenly w-full h-full">
-            <h2 class="font-bold text-6xl">Find A Date</h2>
+          <Vmodalcols class="bg-red-400">
+            <Link href="/datefinder" class="w-full h-full">
+              <h2 class="font-bold text-6xl">Find A Date</h2>
 
-            <img src="" alt="Content Picture" width={128} height={128} />
+              <img src="" alt="Content Picture" width={128} height={128} />
 
-            <p class="text-2xl">Swipe left or right! Find a match today!</p>
-          </Link>
-          
-        </div>
+              <p class="text-2xl">Swipe left or right! Find a match today!</p>
+            </Link>
+          </Vmodalcols>
 
-        <div class="w-full h-full bg-orange-400">
+          <Vmodalcols class="bg-orange-400">
+            <Link href="/dictionary" class="w-full h-full">
+              <h2 class="font-bold text-6xl">Language Dictionary</h2>
 
-          <Link href="/dictionary" class="flex flex-col items-center justify-evenly w-full h-full">
-            <h2 class="font-bold text-6xl">Language Dictionary</h2>
+              <img src="" alt="Content Picture" width={128} height={128} />
 
-            <img src="" alt="Content Picture" width={128} height={128} />
+              <p class="text-2xl">Learning a language or find a word to express your love.</p>
+            </Link>
+          </Vmodalcols>
 
-            <p class="text-2xl">Learning a language or find a word to express your love.</p>
-          </Link>
-          
-        </div>
+        </Vmodal>
+        
       </main>
-    </div>
+    </Parentcont>
   );
 });
 
@@ -68,3 +94,4 @@ export const head: DocumentHead = {
     },
   ],
 };
+
