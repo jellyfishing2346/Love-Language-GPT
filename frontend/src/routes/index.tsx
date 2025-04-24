@@ -4,15 +4,16 @@ import { Link } from "@builder.io/qwik-city";
 import { Parentcont } from "~/components/Parentcont";
 import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
+import HorizontalLogo from '~/assets/LLGPT_Logo_Horizontal.png?jsx';
 
 export default component$(() => {
   return (
     <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-black">
-        <div>
-          <img src="" alt="Image of logo" width={64} height={64} />
+        <div class="w-auto h-full bg-slate-500">
+          <HorizontalLogo />
         </div>
-        <div>
+        <div class="w-auto h-full">
           <Link href="/login" class="w-auto h-full p-5 border border-slate-500 bg-purple-400 text-black">Login/Sign-up</Link>
         </div>
       </nav>

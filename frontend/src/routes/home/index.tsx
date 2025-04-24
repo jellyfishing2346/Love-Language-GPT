@@ -4,6 +4,11 @@ import { Parentcont } from "~/components/Parentcont";
 import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
 import { Overlay } from "~/components/Overlay/Overlay";
+import VerticalLogo from '~/assets/LLGPT_Logo_Vertical.png?jsx';
+import DefaultPFP from '~/assets/Default_PFP.png?jsx';
+import AIRobotImg from '~/assets/michael-martinelli--CPRUDsU7Mo-unsplash.jpg?jsx';
+import DatingImg from '~/assets/gama-films-cWeRjegaVLg-unsplash.jpg?jsx';
+import DictionaryImg from '~/assets/sincerely-media-F466AcbeILI-unsplash.jpg?jsx';
 
 export default component$(() => {
 
@@ -21,7 +26,7 @@ export default component$(() => {
   return (
     <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-violet-300">
-        <div>
+        <div class="flex w-auto h-full">
           <button onClick$={openOverlay} class="w-full h-full p-8 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-400">
             ⚙️
           </button>
@@ -34,12 +39,12 @@ export default component$(() => {
           </Overlay>
         </div>
 
-        <div>
-          <img src="" alt="Image of logo" width={64} height={64} />
+        <div class="flex w-auto h-full">
+          <VerticalLogo class="w-auto h-[64px]" />
         </div>
 
-        <div>
-          <img src="" alt="Profile picture" width={64} height={64} />
+        <div class="flex w-auto h-full">
+          <DefaultPFP class="w-auto h-[64px]" />
         </div>
       </nav>
 
@@ -51,7 +56,7 @@ export default component$(() => {
             <Link href="/ai" class="w-full h-full">
               <h2 class="font-bold text-6xl">A.I.</h2>
 
-              <img src="" alt="Content Picture" width={128} height={128} />
+              <AIRobotImg class="w-auto h-[700px]" />
 
               <p class="text-2xl">Configure or chat with your A.I.</p>
             </Link>
@@ -62,7 +67,7 @@ export default component$(() => {
             <Link href="/datefinder" class="w-full h-full">
               <h2 class="font-bold text-6xl">Find A Date</h2>
 
-              <img src="" alt="Content Picture" width={128} height={128} />
+              <DatingImg class="w-auto h-[700px]" />
 
               <p class="text-2xl">Swipe left or right! Find a match today!</p>
             </Link>
@@ -72,7 +77,7 @@ export default component$(() => {
             <Link href="/dictionary" class="w-full h-full">
               <h2 class="font-bold text-6xl">Language Dictionary</h2>
 
-              <img src="" alt="Content Picture" width={128} height={128} />
+              <DictionaryImg class="w-auto h-[700px]"/>
 
               <p class="text-2xl">Learning a language or find a word to express your love.</p>
             </Link>
