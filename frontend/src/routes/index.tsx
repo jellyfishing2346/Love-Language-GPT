@@ -4,6 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 import { Parentcont } from "~/components/Parentcont";
 import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
+import { Redirbtn } from "~/components/Redirbtn";
 import HorizontalLogo from '~/assets/LLGPT_Logo_Horizontal.png?jsx';
 
 export default component$(() => {
@@ -14,14 +15,14 @@ export default component$(() => {
           <HorizontalLogo />
         </div>
         <div class="w-auto h-full">
-          <Link href="/login" class="w-auto h-full p-5 border border-slate-500 bg-purple-400 text-black">Login/Sign-up</Link>
+          <Redirbtn url="./login" label="Login/Sign-up" class="p-8 bg-purple-400 font-semibold text-xl text-slate-900" />
         </div>
       </nav>
       <main class="flex flex-col items-center justify-evenly w-full min-h-screen bg-pink-400">
         <div class="flex flex-col items-center justify-center w-full h-screen text-center">
           <h1 class="font-extrabold text-9xl">Romance Internationally</h1>
           <h2 class="font-bold text-6xl">With your A.I. wingman</h2>
-          <button type="button" class="mt-8 p-8 font-semibold text-2xl bg-pink-300">Find Love Now!</button>
+          <Redirbtn url="./login" label="Find Love Now!" class="mt-8 p-8 font-semibold text-2xl bg-pink-300" />
         </div>
 
         <Vmodal class="bg-rose-300">

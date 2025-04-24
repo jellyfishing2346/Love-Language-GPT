@@ -1,6 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 import { Parentcont } from "~/components/Parentcont";
+import VerticalLogo from '~/assets/LLGPT_Logo_Vertical.png?jsx';
+import DefaultPFP from '~/assets/Default_PFP.png?jsx';
 
 export default component$(() => {
   return (
@@ -10,12 +12,12 @@ export default component$(() => {
           <button type="button">⚙️</button>
         </div>
 
-        <div>
-          <img src="" alt="Image of logo" width={64} height={64} />
+        <div class="flex w-auto h-full">
+          <VerticalLogo class="w-auto h-[64px]" />
         </div>
 
-        <div>
-          <img src="" alt="Profile picture" width={64} height={64} />
+        <div class="flex w-auto h-full">
+          <DefaultPFP class="w-auto h-[64px]" />
         </div>
       </nav>
 
