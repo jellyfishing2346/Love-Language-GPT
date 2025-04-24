@@ -6,6 +6,10 @@ import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
 import { Redirbtn } from "~/components/Redirbtn";
 import HorizontalLogo from '~/assets/LLGPT_Logo_Horizontal.png?jsx';
+import LanguagePhoneAppImg from '~/assets/maccy-HvIrf_slw4Q-unsplash.jpg?jsx';
+import FlirtImg from '~/assets/ph-m-tr-n-hoan-th-nh-nzKj7DEYKAA-unsplash.jpg?jsx';
+import ChattingImg from '~/assets/joyce-busola-dwmhtK_zX6Y-unsplash.jpg?jsx';
+
 
 export default component$(() => {
   return (
@@ -29,18 +33,21 @@ export default component$(() => {
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl my-3">Learn On The Go</h3>
-            <p class="text-xl">Practice learning your lover's language anywhere at anytime!</p>
+            <p class="text-xl mb-6">Practice learning your lover's language anywhere at anytime!</p>
+            <LanguagePhoneAppImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl mt-3 mb-1">Stress Less,</h3>
             <h3 class="font-bold text-4xl mt-1 mb-3">Flirt More</h3>
-            <p class="text-xl" >Translate your conversations with A.I. in real-time chats!</p>
+            <p class="text-xl mb-6" >Translate your conversations with A.I. in real-time chats!</p>
+            <FlirtImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl my-3">Real-time Action</h3>
-            <p class="text-xl">Chat in real-time with text, audio calls, or even video calls!</p>
+            <p class="text-xl mb-6">Chat in real-time with text, audio calls, or even video calls!</p>
+            <ChattingImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
           
         </Vmodal>
