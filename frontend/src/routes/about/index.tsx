@@ -12,18 +12,15 @@ export default component$(() => {
   return (
     <Parentcont class="flex flex-col items-center justify-start bg-slate-950 text-slate-100 overflow-y-scroll">
       <h1 class="font-bold text-9xl">About</h1>
-        
-        <p>
-            Lorem ipsum dolor, 
-            sit amet consectetur adipisicing elit. 
-            Officia, sequi! 
-            Ipsam natus minus corrupti amet magnam tempora facilis libero excepturi consequatur deleniti dignissimos, 
-            deserunt in culpa mollitia a doloribus reprehenderit?
-        </p>
+      
+      <p>
+          Love-Language-GPT is an open source dating web application with A.I. integration.
+      </p>
 
-        <h2>Citation & Sources</h2>
+      <h2>Citation & Sources</h2>
 
-        <div class="w-1/4 h-auto">
+      <div class="grid grid-flow-col grid-rows-3 gap-4 items-center justify-center w-auto my-2">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <AIRobotImg class="w-1/4 h-auto" />
           <br />
           <br />
@@ -36,7 +33,7 @@ export default component$(() => {
           </p>
         </div>
         
-        <div class="w-1/4 h-auto">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <DatingImg class="w-1/4 h-auto" />
           <br />
           <br />
@@ -49,7 +46,7 @@ export default component$(() => {
           </p>
         </div>
         
-        <div class="w-1/4 h-auto">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <DictionaryImg class="w-1/4 h-auto" />
           <br />
           <br />
@@ -62,7 +59,7 @@ export default component$(() => {
           </p>
         </div>
 
-        <div class="w-1/4 h-auto">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <LanguagePhoneAppImg  class="w-1/4 h-auto" />
           Photo by <a href="https://unsplash.com/@jizhidexiaohailang?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
           Maccy</a> on <a href="https://unsplash.com/photos/person-holding-black-android-smartphone-HvIrf_slw4Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
@@ -70,7 +67,7 @@ export default component$(() => {
           </a>
         </div>
 
-        <div class="w-1/4 h-auto">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <FlirtImg class="w-1/4 h-auto" />
           Photo by <a href="https://unsplash.com/@thinhpham?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
           Phạm Trần Hoàn Thịnh</a> on <a href="https://unsplash.com/photos/a-man-holding-a-bouquet-of-flowers-next-to-a-woman-nzKj7DEYKAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
@@ -78,13 +75,20 @@ export default component$(() => {
           </a>
         </div>
 
-        <div class="w-1/4 h-auto">
+        <div class="flex flex-col items-center justify-center w-full h-auto border border-slate-300">
           <ChattingImg class="w-1/4 h-auto" />
           Photo by <a href="https://unsplash.com/@joycebusola?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
           Joyce Busola</a> on <a href="https://unsplash.com/photos/woman-in-pink-shirt-holding-white-smartphone-dwmhtK_zX6Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
           Unsplash
           </a>
         </div>
+      </div>
+
+      <div>
+        
+      </div>
+
+        
     </Parentcont>
   );
 });
