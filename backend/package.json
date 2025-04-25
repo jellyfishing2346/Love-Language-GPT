@@ -2,6 +2,7 @@
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",
     "@elysiajs/jwt": "^1.2.0",
+    "@elysiajs/websocket": "^0.2.8",
     "@prisma/client": "^6.6.0",
     "axios": "^1.8.4",
     "elysia": "^1.2.25",
