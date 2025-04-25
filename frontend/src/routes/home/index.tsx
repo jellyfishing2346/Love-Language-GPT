@@ -53,7 +53,7 @@ export default component$(() => {
         <Vmodal class="bg-purple-300">
 
           <Vmodalcols class="bg-purple-300">
-            <Link href="/ai" class="w-full h-full">
+            <Link href="/ai" class="flex flex-col items-center justify-start w-full h-full">
               <h2 class="font-bold text-6xl">A.I.</h2>
 
               <AIRobotImg class="w-auto h-[700px]" />
@@ -64,7 +64,7 @@ export default component$(() => {
           </Vmodalcols>
 
           <Vmodalcols class="bg-red-400">
-            <Link href="/datefinder" class="w-full h-full">
+            <Link href="/datefinder" class="flex flex-col items-center justify-start w-full h-full">
               <h2 class="font-bold text-6xl">Find A Date</h2>
 
               <DatingImg class="w-auto h-[700px]" />
@@ -74,7 +74,7 @@ export default component$(() => {
           </Vmodalcols>
 
           <Vmodalcols class="bg-orange-400">
-            <Link href="/dictionary" class="w-full h-full">
+            <Link href="/dictionary" class="flex flex-col items-center justify-start w-full h-full">
               <h2 class="font-bold text-6xl">Language Dictionary</h2>
 
               <DictionaryImg class="w-auto h-[700px]"/>

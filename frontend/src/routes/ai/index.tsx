@@ -23,12 +23,16 @@ export default component$(() => {
 
       <main class="flex flex-row items-center justify-center-safe w-full h-full">
         <div class="flex flex-col items-center justify-start w-1/3 h-full bg-purple-600">
-          <button type="button">+ Add New Chat</button>
-          <button type="button">First Chat</button>
+          <button type="button" class="w-full h-auto border border-black">+ Add New Chat</button>
+          <button type="button" class="w-full h-auto border border-black">First Chat</button>
         </div>
 
-        <div class="flex flex-col items-center justify-end w-2/3 h-full bg-violet-300">
-          <input type="text" class="w-full h-[48px] p-1 bg-slate-50" />
+        <div class="flex flex-col items-center justify-end w-2/3 h-full bg-violet-400">
+          <div class="w-full h-full bg-violet-400">
+          </div>
+          <form class="w-full auto">
+            <input type="text" class="w-full h-[48px] p-1 bg-slate-100" />
+          </form>
         </div>
       </main>
     </Parentcont>
