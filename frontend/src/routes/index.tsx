@@ -4,41 +4,50 @@ import { Link } from "@builder.io/qwik-city";
 import { Parentcont } from "~/components/Parentcont";
 import { Vmodal } from "~/components/Vmodal/Vmodal";
 import { Vmodalcols } from "~/components/Vmodalcols";
+import { Redirbtn } from "~/components/Redirbtn";
+import HorizontalLogo from '~/assets/LLGPT_Logo_Horizontal.png?jsx';
+import LanguagePhoneAppImg from '~/assets/maccy-HvIrf_slw4Q-unsplash.jpg?jsx';
+import FlirtImg from '~/assets/ph-m-tr-n-hoan-th-nh-nzKj7DEYKAA-unsplash.jpg?jsx';
+import ChattingImg from '~/assets/joyce-busola-dwmhtK_zX6Y-unsplash.jpg?jsx';
+
 
 export default component$(() => {
   return (
     <Parentcont>
       <nav class="flex flex-row items-center justify-between w-full h-auto bg-black">
-        <div>
-          <img src="" alt="Image of logo" width={64} height={64} />
+        <div class="w-auto h-full bg-slate-500">
+          <HorizontalLogo />
         </div>
-        <div>
-          <Link href="/login" class="w-auto h-full p-5 border border-slate-500 bg-purple-400 text-black">Login/Sign-up</Link>
+        <div class="w-auto h-full">
+          <Redirbtn url="./login" label="Login/Sign-up" class="p-8 bg-purple-400 font-semibold text-xl text-slate-900" />
         </div>
       </nav>
       <main class="flex flex-col items-center justify-evenly w-full min-h-screen bg-pink-400">
         <div class="flex flex-col items-center justify-center w-full h-screen text-center">
           <h1 class="font-extrabold text-9xl">Romance Internationally</h1>
           <h2 class="font-bold text-6xl">With your A.I. wingman</h2>
-          <button type="button" class="mt-8 p-8 font-semibold text-2xl bg-pink-300">Find Love Now!</button>
+          <Redirbtn url="./login" label="Find Love Now!" class="mt-8 p-8 font-semibold text-2xl bg-pink-300" />
         </div>
 
         <Vmodal class="bg-rose-300">
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl my-3">Learn On The Go</h3>
-            <p class="text-xl">Practice learning your lover's language anywhere at anytime!</p>
+            <p class="text-xl mb-6">Practice learning your lover's language anywhere at anytime!</p>
+            <LanguagePhoneAppImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl mt-3 mb-1">Stress Less,</h3>
             <h3 class="font-bold text-4xl mt-1 mb-3">Flirt More</h3>
-            <p class="text-xl" >Translate your conversations with A.I. in real-time chats!</p>
+            <p class="text-xl mb-6" >Translate your conversations with A.I. in real-time chats!</p>
+            <FlirtImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
 
           <Vmodalcols>
             <h3 class="font-bold text-4xl my-3">Real-time Action</h3>
-            <p class="text-xl">Chat in real-time with text, audio calls, or even video calls!</p>
+            <p class="text-xl mb-6">Chat in real-time with text, audio calls, or even video calls!</p>
+            <ChattingImg class="w-auto h-3/4 m-2" />
           </Vmodalcols>
           
         </Vmodal>
