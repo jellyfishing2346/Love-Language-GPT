@@ -19,7 +19,7 @@ export default component$(() => {
           <HorizontalLogo />
         </div>
         <div class="w-auto h-full">
-          <Redirbtn url="./login" label="Login/Sign-up" class="p-8 bg-purple-400 font-semibold text-xl text-slate-900" />
+          <Redirbtn url="./login" label="Login/Sign-up" class="mx-2 p-8 bg-purple-400 font-semibold text-xl text-slate-900" />
         </div>
       </nav>
       <main class="flex flex-col items-center justify-evenly w-full min-h-screen bg-pink-400">
